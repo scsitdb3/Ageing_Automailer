@@ -1,0 +1,7 @@
+pandas
+pyodbc
+streamlit
+xlsxwriter
+openpyxl
+pathlib
+load_dotenv
