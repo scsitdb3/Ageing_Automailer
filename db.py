@@ -11,16 +11,19 @@ def connect_to_db():
     username = 'Utkrishtsa' 
     password = os.getenv('Password') 
     conn_str = (
-        f"DRIVER={{ODBC Driver 17 for SQL Server}};"
+        f"DRIVER={{ODBC Driver 18 for SQL Server}};"
         f"SERVER={server};"
         f"DATABASE={database};"
         f"UID={username};"
         f"PWD={password};"
         f"MARS_Connection=Yes;"
+        f"Encrypt=yes;"
+        f"TrustServerCertificate=yes;"
         
     )
     conn = pyodbc.connect(conn_str, autocommit=True)
     return conn
   
    
+
 
