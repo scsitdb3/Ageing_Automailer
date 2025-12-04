@@ -16,16 +16,17 @@ def connect_to_db():
         f"DATABASE={database};"
         f"UID={username};"
         f"PWD={password};"
-      #  f"MARS_Connection=Yes;"
+        f"MARS_Connection=Yes;"
        # f"Encrypt=yes;"
        # f"TrustServerCertificate=yes;"
         
     )
-    #conn = pyodbc.connect(conn_str, autocommit=True)
-    conn = pyodbc.connect(conn_str)
+    conn = pyodbc.connect(conn_str, autocommit=True)
+    #conn = pyodbc.connect(conn_str)
     return conn
   
    
+
 
 
 
