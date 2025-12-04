@@ -11,7 +11,7 @@ def connect_to_db():
     username = 'Utkrishtsa' 
     password = os.getenv('Password') 
     conn_str = (
-        f"DRIVER={{ODBC Driver 18 for SQL Server}};"
+        f"DRIVER={{ODBC Driver 17 for SQL Server}};"
         f"SERVER={server};"
         f"DATABASE={database};"
         f"UID={username};"
@@ -25,5 +25,6 @@ def connect_to_db():
     return conn
   
    
+
 
 
