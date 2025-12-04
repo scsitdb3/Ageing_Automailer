@@ -21,10 +21,12 @@ def connect_to_db():
        # f"TrustServerCertificate=yes;"
         
     )
-    conn = pyodbc.connect(conn_str, autocommit=True)
+    #conn = pyodbc.connect(conn_str, autocommit=True)
+    conn = pyodbc.connect(conn_str)
     return conn
   
    
+
 
 
 
